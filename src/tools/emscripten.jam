@@ -6,6 +6,7 @@
 import feature ;
 import os ;
 import toolset ;
+import generators ;
 import common ;
 import gcc ;
 import type ;
