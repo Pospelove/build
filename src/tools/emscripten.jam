@@ -37,7 +37,9 @@ rule init ( version ? :  command * : options * )
 
 feature.extend toolset : emscripten ;
 
-#toolset.inherit-generators emscripten <toolset>emscripten
+generators.override builtin.prebuilt : emscripten.prebuilt ;
+
+toolset.inherit-generators emscripten <toolset>emscripten
     : gcc
     : gcc.mingw.link gcc.mingw.link.dll gcc.compile.c.pch gcc.compile.c++.pch
     ;
