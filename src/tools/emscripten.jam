@@ -53,7 +53,7 @@ toolset.inherit-flags emscripten : gcc
 
 type.set-generated-target-suffix EXE : <toolset>emscripten : "js" ;
 type.set-generated-target-suffix OBJ : <toolset>emscripten : "bc" ;
-type.set-generated-target-suffix STATIC_LIB : <toolset>emscripten : "bc" ;
+type.set-generated-target-suffix STATIC_LIB : <toolset>emscripten : "a" ;
 
 toolset.flags emscripten.compile OPTIONS <flags> ;
 toolset.flags emscripten.compile OPTIONS <cflags> ;
